@@ -1,10 +1,43 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #0f172a;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
+
 header {
-    background: #333;
+    background: #1e293b;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.content {
+    margin-top: 50px;
+}
+
+.cool-button {
+    background: #4f46e5;
     color: white;
-    padding: 10px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cool-button:hover {
+    transform: scale(1.1);
+}
+
+/* Keyframe Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
