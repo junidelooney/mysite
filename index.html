@@ -3,60 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>My Awesome Website</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1 class="title">Welcome to My Cool Website</h1>
-    </header>
 
-    <section class="content">
-        <p>This is a beginner-friendly, animated website!</p>
-        <button class="cool-button">Click Me</button>
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>My Website</h1>
+        <button id="dark-mode-toggle">🌙 Dark Mode</button>
+        <button id="red-mode-toggle">🔴 Red Mode</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 class="title">Welcome to My Awesome Website</h1>
+        <p>Discover amazing animations, scroll effects, and more!</p>
+        <button class="cta-button">Get Started</button>
     </section>
 
-    
-
-    <section class="scroll-section">
-        <h2 class="scroll-text">Scroll Down to See the Effect</h2>
-    </section>
-    
-    <section class="animated-box">
-        <p>This text will fade in when you scroll!</p>
-    </section>
-
-    <section class="parallax">
-        <h2>Parallax Scrolling Effect</h2>
-    </section>
-
-    <div class="progress-bar"></div>
-
+    <!-- Image Gallery -->
     <section class="gallery">
-        <img src="https://images.app.goo.gl/b4oc4tfKcBwxtX2B7" class="gallery-item">
-        <img src="https://images.app.goo.gl/1F3Bc1rBuwUprBxD9" class="gallery-item">
-        <img src="https://images.app.goo.gl/t978spGUQby987bs5" class="gallery-item">
+        <h2>Photo Gallery</h2>
+        <div class="gallery-container">
+            <img src="images/photo1.jpg" alt="Image 1">
+            <img src="images/photo2.jpg" alt="Image 2">
+            <img src="images/photo3.jpg" alt="Image 3">
+        </div>
     </section>
-    
-    <!-- Lightbox -->
-    <div class="lightbox">
-        <span class="close">&times;</span>
-        <img class="lightbox-img">
-    </div>
-    
 
-    <div class="auth-container">
-        <input type="email" id="email" placeholder="Email">
-        <input type="password" id="password" placeholder="Password">
-        <button id="login">Login</button>
-    </div>
-
-    <button id="dark-mode-toggle">🌙 Dark Mode</button>
-    <button id="red-mode-toggle">🔴 Red Mode</button>
-
-    
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
