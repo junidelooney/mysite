@@ -35,3 +35,14 @@ redModeToggle.addEventListener("click", () => {
 
 // GSAP Animations
 gsap.to(".title", { opacity: 1, y: 0, duration: 1.5 });
+
+document.getElementById("get-started-btn").addEventListener("click", () => {
+    document.querySelector(".gallery").scrollIntoView({ behavior: "smooth" });
+});
+
+window.addEventListener("scroll", () => {
+    let scrollPosition = window.scrollY;
+    document.querySelector(".hero").style.backgroundPositionY = `${scrollPosition * 0.5}px`;
+});
+
+gsap.from(".gallery", { opacity: 0, y: 100, duration: 1, scrollTrigger: ".gallery" });
